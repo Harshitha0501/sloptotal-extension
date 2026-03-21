@@ -1,0 +1,37 @@
+name: Bug Report
+description: Report a bug in the SlopTotal extension
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened? What did you expect?
+    validations:
+      required: true
+  - type: dropdown
+    id: site
+    attributes:
+      label: Affected Site
+      options:
+        - Google Search
+        - LinkedIn
+        - Other website (panel feature)
+        - Popup
+        - All sites
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+  - type: input
+    id: chrome
+    attributes:
+      label: Chrome Version
+      placeholder: "e.g., 120.0.6099.109"
+  - type: input
+    id: api
+    attributes:
+      label: API URL
+      placeholder: "e.g., http://localhost:8000 or https://api.sloptotal.com"
